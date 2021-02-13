@@ -1,0 +1,13 @@
+C:\Users\mifet\Videos\Electiva_I\Guia_2\Guia_2\Guia_2\bin\Debug\netcoreapp3.1\Guia_2.exe
+C:\Users\mifet\Videos\Electiva_I\Guia_2\Guia_2\Guia_2\bin\Debug\netcoreapp3.1\Guia_2.deps.json
+C:\Users\mifet\Videos\Electiva_I\Guia_2\Guia_2\Guia_2\bin\Debug\netcoreapp3.1\Guia_2.runtimeconfig.json
+C:\Users\mifet\Videos\Electiva_I\Guia_2\Guia_2\Guia_2\bin\Debug\netcoreapp3.1\Guia_2.runtimeconfig.dev.json
+C:\Users\mifet\Videos\Electiva_I\Guia_2\Guia_2\Guia_2\bin\Debug\netcoreapp3.1\Guia_2.dll
+C:\Users\mifet\Videos\Electiva_I\Guia_2\Guia_2\Guia_2\bin\Debug\netcoreapp3.1\Guia_2.pdb
+C:\Users\mifet\Videos\Electiva_I\Guia_2\Guia_2\Guia_2\obj\Debug\netcoreapp3.1\Guia_2.csprojAssemblyReference.cache
+C:\Users\mifet\Videos\Electiva_I\Guia_2\Guia_2\Guia_2\obj\Debug\netcoreapp3.1\Guia_2.AssemblyInfoInputs.cache
+C:\Users\mifet\Videos\Electiva_I\Guia_2\Guia_2\Guia_2\obj\Debug\netcoreapp3.1\Guia_2.AssemblyInfo.cs
+C:\Users\mifet\Videos\Electiva_I\Guia_2\Guia_2\Guia_2\obj\Debug\netcoreapp3.1\Guia_2.csproj.CoreCompileInputs.cache
+C:\Users\mifet\Videos\Electiva_I\Guia_2\Guia_2\Guia_2\obj\Debug\netcoreapp3.1\Guia_2.dll
+C:\Users\mifet\Videos\Electiva_I\Guia_2\Guia_2\Guia_2\obj\Debug\netcoreapp3.1\Guia_2.pdb
+C:\Users\mifet\Videos\Electiva_I\Guia_2\Guia_2\Guia_2\obj\Debug\netcoreapp3.1\Guia_2.genruntimeconfig.cache
