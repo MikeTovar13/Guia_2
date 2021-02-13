@@ -1,9 +1,8 @@
 {
   "runtimeOptions": {
     "additionalProbingPaths": [
-      "C:\\Users\\mifet\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\mifet\\.nuget\\packages",
-      "C:\\Microsoft\\Xamarin\\NuGet"
+      "C:\\Users\\EXTTCP\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\EXTTCP\\.nuget\\packages"
     ]
   }
 }
