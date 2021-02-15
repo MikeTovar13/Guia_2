@@ -4,26 +4,29 @@ namespace Guia_2
 {
     class Program
     {
+
         static void Main(string[] args)
         {
-            string program; 
-            Console.WriteLine("Solución Guía #2");
+            string program;
+            Program p = new Program();
+            do
+            {
+                Console.Clear();
+                Console.WriteLine("Solución Guía #2");
+                p.menu();
 
-            Console.WriteLine("1. Operaciones matemáticas");
-            Console.WriteLine("2. Funciones matemáticas");
-            Console.WriteLine("3. Validar respuestas");
-            Console.WriteLine("4. Salario promedio");
-            Console.WriteLine("5. Estación climática");
-            Console.WriteLine("6. Algoritmo de suma");
-            Console.WriteLine("7. Estadistica de pesos personas");
-            Console.WriteLine("8. Producción de granja (Huevos)");
-            Console.WriteLine("9. Matriz de estudiantes");
-            Console.WriteLine("10. Nómina de empleados");
-            Console.WriteLine("");
-            Console.WriteLine("Escoge el programa:");
-            program = Console.ReadLine();
+                program = Console.ReadLine();
+                p.eleccion(program);
+            } while (program != "0");
 
-            switch (program) {
+            
+            
+        }
+        void eleccion(string program) {
+            switch (program)
+            {
+                case "0":
+                    break;
                 case "1":
                     Exercise_1 ex1 = new Exercise_1();
                     ex1.Ejecutar();
@@ -65,7 +68,21 @@ namespace Guia_2
                     ex10.Ejecutar();
                     break;
             }
-            
+        }
+        void menu() {
+            Console.WriteLine("1. Operaciones matemáticas");
+            Console.WriteLine("2. Funciones matemáticas");
+            Console.WriteLine("3. Validar respuestas");
+            Console.WriteLine("4. Salario promedio");
+            Console.WriteLine("5. Estación climática");
+            Console.WriteLine("6. Algoritmo de suma");
+            Console.WriteLine("7. Estadistica de pesos personas");
+            Console.WriteLine("8. Producción de granja (Huevos)");
+            Console.WriteLine("9. Matriz de estudiantes");
+            Console.WriteLine("10. Nómina de empleados");
+            Console.WriteLine("0. Salir");
+            Console.WriteLine("");
+            Console.WriteLine("Escoge el programa:");
         }
     }
 }
