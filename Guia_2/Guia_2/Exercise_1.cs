@@ -65,7 +65,7 @@ namespace Guia_2
                 Console.Write("Digita el número 2: ");
                 number_2 = double.Parse(Console.ReadLine());
             }
-            Console.WriteLine("La {0} de {1} y {2} es {3}", operacion,number_1, number_2, funcion(number_1, number_2));
+            Console.WriteLine("La {0} de {1} y {2} es {3}", operacion,number_1, number_2, Math.Round(funcion(number_1, number_2)));
             Console.WriteLine("Presione enter para continuar");
             Console.ReadLine();
         }
