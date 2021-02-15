@@ -50,7 +50,7 @@ namespace Guia_2
         }
         private double div(double a, double b)
         {
-            return a * b;
+            return a / b;
         }
         private void hacer_operacion(string operacion, Func<double, double, double> funcion)
         {
@@ -79,7 +79,7 @@ namespace Guia_2
             Console.WriteLine("Dividir: /");
             Console.WriteLine("Volver: 0");
 
-            Console.WriteLine("Escoge la opción:");
+            Console.Write("Escoge la opción: ");
         }
     }
 
