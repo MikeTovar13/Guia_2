@@ -10,8 +10,7 @@ namespace Guia_2 {
             do {
                 Console.Clear();
                 Console.WriteLine("Cálculo de nomina de empleados");
-                Console.Write("Escriba la cantidad de empleados para caluclar la nomina: ");
-                int n_emp = int.Parse(Console.ReadLine());
+                int n_emp = Utils.readInt("Escriba la cantidad de empleados para caluclar la nomina: ");
                 double[][] datos_in = new double[n_emp][];
                 string[][] datos_emp = new string[n_emp][];
                 for (int i = 0; i < n_emp; i++) {
@@ -24,23 +23,12 @@ namespace Guia_2 {
                     Console.Write("Nombre: ");
                     datos_emp[i][1] = Console.ReadLine();
 
-                    Console.Write("Salario (Valor): ");
-                    datos_in[i][0] = double.Parse(Console.ReadLine());
-
-                    Console.Write("Días trabajados (Días): ");
-                    datos_in[i][1] = double.Parse(Console.ReadLine());
-
-                    Console.Write("Horas extras diurnas (Horas): ");
-                    datos_in[i][2] = double.Parse(Console.ReadLine());
-
-                    Console.Write("Horas extras nocturnas (Horas): ");
-                    datos_in[i][3] = double.Parse(Console.ReadLine());
-
-                    Console.Write("Horas extras festivas (Horas): ");
-                    datos_in[i][4] = double.Parse(Console.ReadLine());
-
-                    Console.Write("Horas con recargo nocturno (Horas): ");
-                    datos_in[i][5] = double.Parse(Console.ReadLine());
+                    datos_in[i][0] = Utils.readDouble("Salario (Valor): ");
+                    datos_in[i][1] = Utils.readInt("Días trabajados (Días): ");
+                    datos_in[i][2] = Utils.readInt("Horas extras diurnas (Horas): ");
+                    datos_in[i][3] = Utils.readInt("Horas extras nocturnas (Horas): ");
+                    datos_in[i][4] = Utils.readInt("Horas extras festivas (Horas): ");
+                    datos_in[i][5] = Utils.readInt("Horas con recargo nocturno (Horas): ");
                 }
                 double[][] datos_out = new double[n_emp][];
                 for (int i = 0; i < n_emp; i++) {

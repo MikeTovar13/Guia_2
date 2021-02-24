@@ -9,16 +9,15 @@ namespace Guia_2 {
             do {
                 Console.Clear();
                 Console.WriteLine("Promedios por materia y por estudiante\n");
-                Console.Write("Escribe la cantidad de materias: ");
-                int materias = int.Parse(Console.ReadLine());
-                Console.Write("Escribe la cantidad de estudiantes: ");
-                int estudiantes = int.Parse(Console.ReadLine());
+
+                int materias = Utils.readInt("Escribe la cantidad de materias: ");
+                int estudiantes = Utils.readInt("Escribe la cantidad de estudiantes: ");
+
                 float[][] matriz = new float[materias][];
                 for (int i = 0; i < materias; i++) {
                     matriz[i] = new float[estudiantes];
                     for (int j = 0; j < estudiantes; j++) {
-                        Console.Write("Escribe la nota de la materia {0} para el estudiante {1}: ", i + 1, j + 1);
-                        matriz[i][j] = float.Parse(Console.ReadLine());
+                        matriz[i][j] = Utils.readFloat("Escribe la nota de la materia "+(i+1)+" para el estudiante "+(j+1)+"\n Usar , para los decimales: ");
                     }
                 }
                 this.mostrar_tabla(matriz, materias, estudiantes);

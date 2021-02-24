@@ -13,11 +13,9 @@ namespace Guia_2
             {
                 Console.Clear();
                 Console.WriteLine("Cálculo de producción de gallinas");
-                Console.WriteLine("Ingrese la cantidad de gallinas");
-                int gallinas = int.Parse(Console.ReadLine());
-
-                Console.WriteLine("Ingrese la cantidad de días");
-                int dias = int.Parse(Console.ReadLine());
+                
+                int gallinas = Utils.readInt("Ingrese la cantidad de gallinas");
+                int dias = Utils.readInt("Ingrese la cantidad de días");
  
                 Console.WriteLine("La producción será de {0}", this.calcular_produccion(gallinas, dias));
 

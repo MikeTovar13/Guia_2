@@ -2,18 +2,14 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Guia_2
-{
-    class Exercise_1
-    {
-        public void Ejecutar()
-        {
+namespace Guia_2 {
+    class Exercise_1 {
+        public void Ejecutar() {
             string operation;
-            do{
+            do {
                 this.menu();
                 operation = Console.ReadLine();
-                switch (operation)
-                {
+                switch (operation) {
                     case "0":
                         break;
                     case "+":
@@ -34,43 +30,36 @@ namespace Guia_2
                         Console.ReadLine();
                         break;
                 }
-                
+
             } while (operation != "0");
         }
         private double suma(double a, double b) {
             return a + b;
         }
-        private double resta(double a, double b)
-        {
+        private double resta(double a, double b) {
             return a - b;
         }
-        private double mult(double a, double b)
-        {
+        private double mult(double a, double b) {
             return a * b;
         }
-        private double div(double a, double b)
-        {
+        private double div(double a, double b) {
             return a / b;
         }
-        private void hacer_operacion(string operacion, Func<double, double, double> funcion)
-        {
-            Console.Write("Digita el número 1: ");
-            double number_1 = double.Parse(Console.ReadLine());
+        private void hacer_operacion(string operacion, Func<double, double, double> funcion) {
 
-            Console.Write("Digita el número 2: ");
-            double number_2 = double.Parse(Console.ReadLine());
-            while (operacion == "división" && number_2 == 0)
-            {
+            double number_1 = Utils.readDouble("Digita el número 1: ");
+            double number_2 = Utils.readDouble("Digita el número 2: ");
+
+            while (operacion == "división" && number_2 == 0) {
                 Console.WriteLine("La división por cero (0) no es posible matemáticamente.");
-                Console.Write("Digita el número 2: ");
-                number_2 = double.Parse(Console.ReadLine());
+                number_2 = Utils.readDouble("Digita el número 2: ");
             }
-            Console.WriteLine("La {0} de {1} y {2} es {3}", operacion,number_1, number_2, Math.Round(funcion(number_1, number_2)));
+
+            Console.WriteLine("La {0} de {1} y {2} es {3}", operacion, number_1, number_2, Math.Round(funcion(number_1, number_2)));
             Console.WriteLine("Presione enter para continuar");
             Console.ReadLine();
         }
-        private void menu()
-        {
+        private void menu() {
             Console.Clear();
             Console.WriteLine("Este programa te hace la operación matemática que desees, escoge una opción:");
             Console.WriteLine("Sumar: +");
