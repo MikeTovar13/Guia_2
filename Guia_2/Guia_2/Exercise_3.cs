@@ -12,20 +12,17 @@ namespace Guia_2
         {
             do
             {
-                double num, correcta = 0, incorrecta = 0, blanco = 0;
+                double correcta = 0, incorrecta = 0, blanco = 0;
                 Console.WriteLine("Programa 3, Te muestra el total de tus respuestas");
 
 
-                Console.WriteLine("Ingrese las respuestas correctas");
-                correcta = double.Parse(Console.ReadLine());
+                correcta = Utils.readDouble("Ingrese las respuestas correctas");
                 correcta = (correcta * 4);
 
-                Console.WriteLine("Ingrese las respuestas incorrectas");
-                incorrecta = double.Parse(Console.ReadLine());
+                incorrecta = Utils.readDouble("Ingrese las respuestas incorrectas");
                 incorrecta = (incorrecta * -1);
 
-                Console.WriteLine("Ingrese las respuestas blanco");
-                blanco = double.Parse(Console.ReadLine());
+                blanco = Utils.readDouble("Ingrese las respuestas en blanco");
                 blanco = (0);
 
                 Console.WriteLine("Tu puntaje de respuestas correctas es: {0}", correcta);
