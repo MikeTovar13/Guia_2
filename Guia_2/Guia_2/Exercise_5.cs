@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace Guia_2 {
@@ -31,6 +32,7 @@ namespace Guia_2 {
                         nErrors++;
                     } else if (tempMin > tempMax)
                     {
+                        nErrors++;
                         tempMin = Utils.readDouble("La temperatura debe ser menor a la máxima, ingrese una temperatura minima: ");
                     }
                     temps[i][0] = tempMax;
@@ -42,6 +44,9 @@ namespace Guia_2 {
                 for (int ii = 0; ii < nDias; ii++)
                 {
                     Console.WriteLine("{0} {1}", temps[ii][0], temps[ii][1]);
+                    this.calcularMedia(temps[ii]);
+                    this.calcularMaxima(temps[ii]);
+                    this.calcularMinima(temps[ii]);
                 }
                 Console.WriteLine("Temperatura media: {0}", med);
                 Console.WriteLine("Temperatura máxima {0}", max);
@@ -51,6 +56,28 @@ namespace Guia_2 {
                 Console.WriteLine("\n Presiones enter para repetir, escriba NO para volver al menú");
                 repetir = Console.ReadLine();
             } while (repetir != "no");
+
         }
+
+        private void calcularMedia(double[] temps)
+        {
+             med = temps.Average();
+            //Console.WriteLine("El promedio es {0}", med);
+        }
+
+        private void calcularMaxima(double[] temps)
+        {
+            max = temps.Max();
+            //Console.WriteLine("La temperatura máxima es {0}", max);
+
+        }
+
+        private void calcularMinima(double[] temps)
+        {
+            min = temps.Min();
+            //Console.WriteLine("La temperatura minima  es {0}", min);
+
+        }
+
     }
 }
