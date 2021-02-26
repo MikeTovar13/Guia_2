@@ -57,8 +57,8 @@ namespace Guia_2
 
 
                 }
-                Console.WriteLine("\n Presiones enter para repetir, escriba NO para volver al menú");
-                repetir = Console.ReadLine();
+                Console.WriteLine("\n Presiona enter para repetir, escriba NO para volver al menú");
+                repetir = Console.ReadLine().ToLower();
             }
 
             while (repetir != "no");

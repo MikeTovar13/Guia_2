@@ -37,8 +37,8 @@ namespace Guia_2 {
                 this.mostrarDatosbase(datos_emp, datos_out, n_emp);
                 this.mostrarExtras(datos_out, n_emp);
                 this.mostrarDeduciones(datos_out, n_emp);
-                Console.WriteLine("\n Presiones enter para repetir, escriba NO para volver al menú");
-                repetir = Console.ReadLine();
+                Console.WriteLine("\n Presiona enter para repetir, escriba NO para volver al menú");
+                repetir = Console.ReadLine().ToLower();
 
             } while (repetir != "no");
 

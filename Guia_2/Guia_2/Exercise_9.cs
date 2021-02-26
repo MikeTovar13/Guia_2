@@ -24,7 +24,7 @@ namespace Guia_2 {
 
                 this.promedio_materia(matriz, materias, estudiantes);
                 this.promedio_estudiante(matriz, materias, estudiantes);
-                Console.WriteLine("\nPresione enter para continuar, o escriba NO para volver al menú principal");
+                Console.WriteLine("\nPresiona enter para continuar, o escriba NO para volver al menú principal");
                 opcion = Console.ReadLine().ToLower();
             } while (opcion != "no");
         }

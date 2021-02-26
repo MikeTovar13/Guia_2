@@ -15,7 +15,7 @@ namespace Guia_2 {
                 Console.Clear();
                 Console.WriteLine("Programa 5, Calculos estación climática ");
                 int nDias = Utils.readInt("Ingrese la cantidad de días que vas a registrar las termperaturas: ");
-                double[][] temps = new double[2][];
+                double[][] temps = new double[nDias][];
                 for (int i = 0; i < nDias; i++)
                 {
                     temps[i] = new double[2];
@@ -53,8 +53,8 @@ namespace Guia_2 {
                 Console.WriteLine("Temperatura minima {0}", min);
                 Console.WriteLine("Cantidad de errores: {0}", nErrors);
 
-                Console.WriteLine("\n Presiones enter para repetir, escriba NO para volver al menú");
-                repetir = Console.ReadLine();
+                Console.WriteLine("\n Presiona enter para repetir, escriba NO para volver al menú");
+                repetir = Console.ReadLine().ToLower();
             } while (repetir != "no");
 
         }

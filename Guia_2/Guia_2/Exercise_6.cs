@@ -6,36 +6,46 @@ namespace Guia_2 {
     class Exercise_6 {
 
         public void Ejecutar() {
-            Console.WriteLine("Programa 6, Numero Positivos y Numeros Negativos");
 
-            int num,positivo,negativo,cero,cant,i;
-            positivo=0;
-            negativo=0;
-            cero=0;
-            Console.Write("Introduzca Cantidad de Numeros a Evaluar:");
-            cant = int.Parse(Console.ReadLine());
-            for (i=1; i<=cant;i++)
-            {
-                Console.Write("Introduzca un Numero Entero:");
-                num = int.Parse(Console.ReadLine());
-                if (num>0)
-                {
-                    positivo+=+1;
-                }
-                else
-                if(num<0)
-                {
-                    negativo+=+1;
-                }
-                else
-                cero+=+1;
-            }
+            string repetir = "";
+            do {
+                Console.Clear();
+                Console.WriteLine("Programa 6, Numero Positivos y Numeros Negativos");
+                double num;
+                int positivo = 0;
+                int negativo = 0;
+                int cero = 0;
+                int cant;
 
-            Console.WriteLine("La Cantidad de Positivos Son: " + positivo);
-            Console.WriteLine("La Cantidad de Negativos Son: " +negativo);
-            Console.WriteLine("La Cantidad de Neutros Son:  " +cero);
-            //return 0;
-            System.Threading.Thread.Sleep(10000);
+                double numPositivos = 0;
+                double numNegativos = 0;
+
+                cant = Utils.readInt("Introduzca Cantidad de Numeros a Evaluar: ");
+
+                for (int i = 1; i <= cant; i++) {
+
+                    num = Utils.readDouble("Introduzca un Numero Entero: ");
+                    if (num > 0) {
+                        positivo += 1;
+                        numPositivos += num;
+                    } else
+                    if (num < 0) {
+                        negativo += 1;
+                        numNegativos += num;
+                    } else {
+                        cero++;
+                    }
+                }
+
+                Console.WriteLine("La cantidad de positivos son {0} y suman en total {1}.", positivo, numPositivos);
+                Console.WriteLine("La cantidad de negativos son {0} y suman en total {1}.", negativo, numNegativos);
+                Console.WriteLine("La cantidad de neutros son {0} y suman cero.", cero);
+
+                Console.WriteLine("\n Presiona enter para repetir, escriba NO para volver al menú");
+                repetir = Console.ReadLine().ToLower();
+
+            } while (repetir != "no");
+            
         }
     }
 }

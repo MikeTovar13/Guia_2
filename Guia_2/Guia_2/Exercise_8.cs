@@ -19,7 +19,7 @@ namespace Guia_2
  
                 Console.WriteLine("La producción será de {0}", this.calcular_produccion(gallinas, dias));
 
-                Console.WriteLine("Para repetir presione entre, para salir escriba No");
+                Console.WriteLine("\nPresiona enter para repetir, escriba NO para volver al menú");
                 continuar = Console.ReadLine().ToLower();
 
             } while (continuar != "no");
