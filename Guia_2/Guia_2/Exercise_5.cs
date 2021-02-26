@@ -19,7 +19,7 @@ namespace Guia_2 {
                 for (int i = 0; i < nDias; i++)
                 {
                     temps[i] = new double[2];
-                    Console.WriteLine("Temperatura del día {0}", i+1);
+                    Console.WriteLine("\nTemperatura del día {0}", i+1);
                     tempMax = Utils.readDouble("Temperatura máxima: ");
                     if (tempMax == 9)
                     {
@@ -40,15 +40,15 @@ namespace Guia_2 {
                 }
 
                 
-                Console.WriteLine("Temperatura máxima | Temperatura minima");
+                Console.WriteLine("\nTemperatura máxima | Temperatura minima");
                 for (int ii = 0; ii < nDias; ii++)
                 {
                     Console.WriteLine("{0} {1}", temps[ii][0], temps[ii][1]);
-                    this.calcularMedia(temps[ii]);
-                    this.calcularMaxima(temps[ii]);
-                    this.calcularMinima(temps[ii]);
+                    med += temps[ii][0]+ temps[ii][1];
+                    max = Math.MaxMagnitude(Math.MaxMagnitude(temps[ii][0] , temps[ii][1]), max);
+                    min = Math.MinMagnitude(Math.MinMagnitude(temps[ii][0], temps[ii][1]), min);
                 }
-                Console.WriteLine("Temperatura media: {0}", med);
+                Console.WriteLine("\nTemperatura media: {0:0.0}", med/(nDias*2));
                 Console.WriteLine("Temperatura máxima {0}", max);
                 Console.WriteLine("Temperatura minima {0}", min);
                 Console.WriteLine("Cantidad de errores: {0}", nErrors);
@@ -59,25 +59,7 @@ namespace Guia_2 {
 
         }
 
-        private void calcularMedia(double[] temps)
-        {
-             med = temps.Average();
-            //Console.WriteLine("El promedio es {0}", med);
-        }
-
-        private void calcularMaxima(double[] temps)
-        {
-            max = temps.Max();
-            //Console.WriteLine("La temperatura máxima es {0}", max);
-
-        }
-
-        private void calcularMinima(double[] temps)
-        {
-            min = temps.Min();
-            //Console.WriteLine("La temperatura minima  es {0}", min);
-
-        }
+    
 
     }
 }
