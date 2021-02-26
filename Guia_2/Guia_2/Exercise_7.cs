@@ -62,8 +62,6 @@ namespace Guia_2 {
                             
                         }
             }
-
-
             if (niño != 0)
             {
                 promedio_niño = peso_niño / niño;
