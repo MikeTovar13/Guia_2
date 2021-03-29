@@ -51,10 +51,10 @@ namespace Guia_2 {
                     promedio_adulto = this.promedio(adulto, peso_adulto);
                     promedio_viejo = this.promedio(viejo, peso_viejo);
                 }
-                Console.WriteLine("\nLa cantidad de niños es {0} de {1} personas, su promedio de peso es {3}", niño, personas, promedio_niño);
-                Console.WriteLine("La cantidad de jovenes es {0} de {1} personas, su promedio de peso es {3}", joven, personas, promedio_joven);
-                Console.WriteLine("La cantidad de adultos es {0} de {1} personas, su promedio de peso es {3}", adulto, personas, promedio_adulto);
-                Console.WriteLine("La cantidad de viejos es {0} de {1} personas, su promedio de peso es {3}", viejo, personas, promedio_viejo);
+                Console.WriteLine("\nLa cantidad de niños es {0} de {1} personas, su promedio de peso es {2}", niño, personas, promedio_niño);
+                Console.WriteLine("La cantidad de jovenes es {0} de {1} personas, su promedio de peso es {2}", joven, personas, promedio_joven);
+                Console.WriteLine("La cantidad de adultos es {0} de {1} personas, su promedio de peso es {2}", adulto, personas, promedio_adulto);
+                Console.WriteLine("La cantidad de viejos es {0} de {1} personas, su promedio de peso es {2}", viejo, personas, promedio_viejo);
                 Console.WriteLine("\n Presiona enter para repetir, escriba NO para volver al menú");
                 repetir = Console.ReadLine().ToLower();
             } while (repetir != "no");
